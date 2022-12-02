@@ -37,7 +37,6 @@ stages:
     - model.pkl
     - src/evaluate.py
     outs:
-    - eval/importance.png
     - eval/live/test/plots:
         cache: false
     - eval/live/train/plots:
@@ -49,6 +48,8 @@ stages:
         cache: false
     - eval/live/train/metrics.json:
         cache: false
+    plots:
+    - eval/importance.png
 plots:
   - eval/importance.png
   - Precision-Recall:
